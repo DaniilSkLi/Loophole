@@ -9,7 +9,6 @@ class Handler extends HandlerTemplate
 {
   protected function execute()
   {
-    dump($this);
     Log::push("Run system command: " . $this->command, $this->logger);
 
     $fail = false;
