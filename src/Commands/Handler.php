@@ -18,18 +18,13 @@ class Handler
 {
   private Logger $logger;
   private string $command;
-  private object | null $args;
+  private array | null $args;
   private string $type;
 
-  public function __construct(string $command, string $args, Logger $logger)
+  public function __construct(string $command, Logger $logger)
   {
     $this->logger = $logger;
     $this->command = $command;
-    $this->args = @json_decode($args, false);
-
-    if ($this->args === null && json_last_error() !== JSON_ERROR_NONE) {
-      Error::push("Incorrect json data in args: \"" . $args . "\".", $this->logger);
-    }
 
     $this->execute();
   }

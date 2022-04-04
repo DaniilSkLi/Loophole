@@ -17,8 +17,7 @@ class Setup extends ConfigExt
   private array | object $data = [];
   private array $rules = [
     "password",
-    "command",
-    "args"
+    "command"
   ];
   private Logger $logger;
 
@@ -44,7 +43,7 @@ class Setup extends ConfigExt
 
     if ($this->checkPassword()) {
       Log::push("Trying to use. [+] Success password validate.", $this->logger);
-      new Handler($this->data->command, $this->data->args, $this->logger);
+      new Handler($this->data->command, $this->logger);
     } else {
       Error::push_double(
         "Trying to use. [-] Incorrect password.",
