@@ -4,7 +4,7 @@ namespace Loophole;
 
 class Test
 {
-  public static function Hello()
+  public static function hello()
   {
     echo "Hello, Loophole!";
   }

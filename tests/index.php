@@ -6,6 +6,8 @@ error_reporting(E_ALL);
 
 require_once __DIR__ . "/../vendor/autoload.php";
 
-use Loophole\Test;
+use Loophole\Setup;
+use Loophole\Config;
 
-Test::Hello();
+$loophole = new Setup((new Config("lalka"))->setLog(true));
+$loophole->start();
