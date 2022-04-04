@@ -11,6 +11,7 @@ use Loophole\Utils\Log;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 
+// A class for setting all parameters and checking fields. It is the main class in the library.
 class Setup extends ConfigExt
 {
   private array | object $data = [];

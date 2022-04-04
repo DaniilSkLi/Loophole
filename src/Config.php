@@ -5,6 +5,7 @@ namespace Loophole;
 use Loophole\Config\Method;
 use Loophole\Config\ConfigExt;
 
+// A class for settings to the library
 class Config extends ConfigExt
 {
   public function __construct($password)

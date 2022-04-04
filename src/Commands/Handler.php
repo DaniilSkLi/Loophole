@@ -13,6 +13,7 @@ use Loophole\SystemCommands\Handler as SystemHandler;
 
 use Monolog\Logger;
 
+// A basic handler that prepares the data for specialized command handlers
 class Handler
 {
   private Logger $logger;

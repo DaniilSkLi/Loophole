@@ -4,6 +4,7 @@ namespace Loophole\CommandsHandler;
 
 use Monolog\Logger;
 
+// Template for specialized handlers
 class HandlerTemplate
 {
   protected string $command;

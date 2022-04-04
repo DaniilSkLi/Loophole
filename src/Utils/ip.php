@@ -2,8 +2,11 @@
 
 namespace Loophole\Utils;
 
-class ip {
-  public static function get() {
+// A simple class to get the user ip
+class ip
+{
+  public static function get()
+  {
     return $_SERVER["REMOTE_ADDR"];
   }
 }

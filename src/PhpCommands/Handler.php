@@ -4,7 +4,12 @@ namespace Loophole\PhpCommands;
 
 use Loophole\CommandsHandler\HandlerTemplate;
 
+// Specialized handler for php commands
 class Handler extends HandlerTemplate
 {
-  // TODO:: make php functions execute...
+  protected function execute()
+  {
+    $cmd = $this->command;
+    $cmd();
+  }
 }

@@ -4,6 +4,7 @@ namespace Loophole\Commands;
 
 use Loophole\Commands\CommandType;
 
+// Get command type
 class GetCommandType
 {
   private static string $loopholePrefix = "loophole::";

@@ -5,6 +5,7 @@ namespace Loophole\SystemCommands;
 use Loophole\CommandsHandler\HandlerTemplate;
 use Loophole\Utils\Log;
 
+// Specialized handler for system commands
 class Handler extends HandlerTemplate
 {
   protected function execute()
