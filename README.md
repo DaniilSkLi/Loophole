@@ -27,10 +27,11 @@ $loophole->start();
 
 ```
 And in url address  
-`http://localhost:8080/?password=myTopSecretPassword&command=touch hello.txt&args={} // Creates a "hello.txt" file`
+`http://localhost:8080/?password=password_hash&command=touch hello.txt // Creates a "hello.txt" file`
+`http://localhost:8080/?password=password_hash&command=php::echo 123; // Echo 123 on page
 
 ### Warning!
-`password`, `command` and `args` - required parameters.
+`password`, `command` - required parameters.
 
 ### Methods
 #### Config
