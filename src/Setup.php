@@ -55,8 +55,8 @@ class Setup extends ConfigExt
 
   private function checkPassword(): bool
   {
-    $hash = $this->config->password;
-    $password = $this->data->password;
+    $password = $this->config->password;
+    $hash = $this->data->password;
 
     return password_verify($password, $hash);
   }

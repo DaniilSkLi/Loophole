@@ -20,6 +20,6 @@
         "monolog/monolog": "^2.4"
     },
     "require-dev": {
-        "symfony/var-dumper": "6.1.x-dev"
+        "symfony/var-dumper": "^6.0"
     }
 }

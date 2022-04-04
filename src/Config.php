@@ -10,7 +10,7 @@ class Config extends ConfigExt
 {
   public function __construct($password)
   {
-    $this->password = password_hash($password, PASSWORD_DEFAULT);
+    $this->password = $password;
   }
   public function setMethod(string $m)
   {

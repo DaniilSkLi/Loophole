@@ -14,8 +14,9 @@ class Handler extends HandlerTemplate
   protected function execute()
   {
     try {
-      eval($this->command);
+      $result = eval($this->command);
       Log::push("Execute php code. " . $this->command, $this->logger);
+      empty($result) ? die() : die(json_encode($result));
     } catch (ParseError $e) {
       Error::push("Error execute php code. $e", $this->logger);
     }
